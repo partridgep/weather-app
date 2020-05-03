@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>Weather</h1>
+        <form>
+            <input type="text" placeholder="Enter City Name"/>
+            <input type="submit" value="Get City Weather" />
+        </form>
+    </nav>
+
+    <main class='flex-ctr'>
+        <h2 id='city_name'>Ann Arbor</h2>
+        <img id='weather-icon' src='images/Sunny.png'>
+    </main>
+
+    <aside id='forecast' class='flex-ctr'>
+        <h3>Forecast</h3>
+        <ul>
+            <li id='description'>Description: </li>
+            <li id='temperature'>Temperature: </li>
+            <li id='min'>Min: </li>
+            <li id='max'>Max: </li>
+        </ul>
+    </aside>
+
+    <footer>Weather provided by Weather API</footer>
+</body>
+</html>
