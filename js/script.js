@@ -14,7 +14,10 @@ const $input = $('input[type="text"]')
 const $slider = $("#temp_unit");
 
 /*----- event listeners -----*/
-$('form').on('submit', handleGetData) 
+$('form').on('submit', handleGetData)
+
+//on slider change, call function to change units
+$slider.change(chooseUnits);
 
 /*----- functions -----*/
 
@@ -114,5 +117,3 @@ function chooseUnits() {
     if (weatherData !== undefined) {render()};
 }
 
-//on slider change, call function to change units
-$slider.change(chooseUnits);
